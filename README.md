@@ -1,3 +1,4 @@
+{
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -74,4 +75,5 @@ Menu:
 
     return 0; //Retorna valor 0, sem erros, o processo foi bem sucedido.
 
+}
 }
