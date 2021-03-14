@@ -1,29 +1,28 @@
-{
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
-#include <conio.h>
-//Declarando variáveis:
-int numero;
-int NumDec, binario[45], aux, bin, dec = 0, i;
-int main()
-{
-//Menu de opções:
-Menu:
-//Se o usuário digitar 1 irá iniciar a conversão de número decimal para binário.
-//E se o usuário digitar 2 irá iniciar a conversão de número binário para decimal.
-    system("color 9");
-    printf("\n"); //Comando para imprimir na tela o que será digitado entre os parênteses.
-    printf("-------------------------\n\n");
-    printf("   Conversor Binario     \n\n");
-    printf("-------------------------\n");
-    printf("\n");
-    printf("Converter DECIMAL para BINARIO - Digite 1\n");
-    printf("Converter BINARIO para DECIMAL - Digite 2\n");
-    printf("\nEscolha a opcao desejada: \n");
-    scanf("%d", &numero); //Comando para coletar dados que o usuário digitar.
-    switch(numero) //Switch case - Dá opção para o usuário escolher qual função fazer.
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    #include <math.h>
+    #include <conio.h>
+    //Declarando variáveis:
+    int numero;
+    int NumDec, binario[45], aux, bin, dec = 0, i;
+    int main()
+    {
+    //Menu de opções:
+    Menu:
+    //Se o usuário digitar 1 irá iniciar a conversão de número decimal para binário.
+    //E se o usuário digitar 2 irá iniciar a conversão de número binário para decimal.
+        system("color 9");
+        printf("\n"); //Comando para imprimir na tela o que será digitado entre os parênteses.
+        printf("-------------------------\n\n");
+        printf("   Conversor Binario     \n\n");
+        printf("-------------------------\n");
+        printf("\n");
+        printf("Converter DECIMAL para BINARIO - Digite 1\n");
+        printf("Converter BINARIO para DECIMAL - Digite 2\n");
+        printf("\nEscolha a opcao desejada: \n");
+        scanf("%d", &numero); //Comando para coletar dados que o usuário digitar.
+        switch(numero) //Switch case - Dá opção para o usuário escolher qual função fazer.
 
     {
 
