@@ -3,17 +3,17 @@
 #include <string.h>
 #include <math.h>
 #include <conio.h>
-//Declarando vari·veis:
+//Declarando vari√°veis:
 int numero;
 int NumDec, binario[45], aux, bin, dec = 0, i;
 int main()
 {
-//Menu de opÁıes:
+//Menu de op√ß√µes:
 Menu:
-//Se o usu·rio digitar 1 ir· iniciar a convers„o de n˙mero decimal para bin·rio.
-//E se o usu·rio digitar 2 ir· iniciar a convers„o de n˙mero bin·rio para decimal.
+//Se o usu√°rio digitar 1 ir√° iniciar a convers√£o de n√∫mero decimal para bin√°rio.
+//E se o usu√°rio digitar 2 ir√° iniciar a convers√£o de n√∫mero bin√°rio para decimal.
     system("color 9");
-    printf("\n"); //Comando para imprimir na tela o que ser· digitado entre os parÍnteses.
+    printf("\n"); //Comando para imprimir na tela o que ser√° digitado entre os par√™nteses.
     printf("-------------------------\n\n");
     printf("   Conversor Binario     \n\n");
     printf("-------------------------\n");
@@ -21,8 +21,8 @@ Menu:
     printf("Converter DECIMAL para BINARIO - Digite 1\n");
     printf("Converter BINARIO para DECIMAL - Digite 2\n");
     printf("\nEscolha a opcao desejada: \n");
-    scanf("%d", &numero); //Comando para coletar dados que o usu·rio digitar.
-    switch(numero) //Switch case - D· opÁ„o para o usu·rio escolher qual funÁ„o fazer.
+    scanf("%d", &numero); //Comando para coletar dados que o usu√°rio digitar.
+    switch(numero) //Switch case - D√° op√ß√£o para o usu√°rio escolher qual fun√ß√£o fazer.
 
     {
 
@@ -40,7 +40,7 @@ Menu:
         printf("\n\t");
         for(aux=1; aux < 45; aux++){
             printf("%d", binario[aux]);
-            if((aux%4)==0) //Separar o resultado bin·rio a cada 4 caracteres dar um espaÁo. exemplo: 0000 0000.
+            if((aux%4)==0) //Separar o resultado bin√°rio a cada 4 caracteres dar um espa√ßo. exemplo: 0000 0000.
                 printf(" ");
 
     }
@@ -60,17 +60,18 @@ Menu:
 
         printf("\nO numero Decimal e: %d", dec);
         return 0;
+        system("pause");
         break;
 
     default:
-        printf("Opcao Invalida\n"); //Se o usu·rio digitar um comando que n„o existe, ir· aparecer opÁ„o inv·lida.
+        printf("Opcao Invalida\n"); //Se o usu√°rio digitar um comando que n√£o existe, ir√° aparecer op√ß√£o inv√°lida.
 
     }
 
 
-    system("pause"); //Comando para pausar a tela, e o usu·rio confirmar para fechar o programa.
+    system("pause"); //Comando para pausar a tela, e o usu√°rio confirmar para fechar o programa.
 
-    goto Menu; //Comando para voltar ao inÌcio do sistema quando apresentar o resultado.
+    goto Menu; //Comando para voltar ao in√≠cio do sistema quando apresentar o resultado.
 
     return 0; //Retorna valor 0, sem erros, o processo foi bem sucedido.
 
