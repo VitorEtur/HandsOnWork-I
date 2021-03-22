@@ -3,6 +3,8 @@
     #include <string.h>
     #include <math.h>
     #include <conio.h>
+    #include <locale.h>
+
     //Declarando variáveis:
     int numero;
     int NumDec, binario[45], aux, bin, dec = 0, i;
@@ -10,19 +12,23 @@
 
 
     {
+    setlocale(LC_ALL, "Portuguese");
     //Menu de opções:
     Menu:
+        numero=0;
+        NumDec=0, binario[45]=0, aux=0, bin=0, dec=0, i=0;
+
     //Se o usuário digitar 1 irá iniciar a conversão de número decimal para binário.
     //E se o usuário digitar 2 irá iniciar a conversão de número binário para decimal.
         system("color 9");
         printf("\n"); //Comando para imprimir na tela o que será digitado entre os parênteses.
         printf("-------------------------\n\n");
-        printf("   Conversor Binario     \n\n");
+        printf("   Conversor Binário     \n\n");
         printf("-------------------------\n");
         printf("\n");
-        printf("Converter DECIMAL para BINARIO - Digite 1\n");
-        printf("Converter BINARIO para DECIMAL - Digite 2\n");
-        printf("\nEscolha a opcao desejada: \n");
+        printf("Converter DECIMAL para BINÁRIO - Digite 1\n");
+        printf("Converter BINÁRIO para DECIMAL - Digite 2\n");
+        printf("\nEscolha a opção desejada: \n");
         scanf("%d", &numero); //Comando para coletar dados que o usuário digitar.
         switch(numero) //Switch case - Dá opção para o usuário escolher qual função fazer.
 
@@ -30,7 +36,7 @@
 
         case 1:
             system("cls");
-            printf("Digite um numero Decimal: \n");
+            printf("Digite um número Decimal: \n");
             scanf("%d", &NumDec);
 
             for(aux= 44; aux >=0; aux--){
@@ -48,10 +54,11 @@
         }
 
             break;
+    Conversor2:
 
         case 2:
             system("cls"); //Comando para limpar a tela anterior.
-            printf("Digite um numero Binario: \n");
+            printf("Digite um número Binário: \n");
             scanf("%d", &bin);
             for(i = 0; bin> 0; i++)
 
@@ -62,12 +69,12 @@
             {
 
 
-            printf("\nO numero Decimal e: %d", dec);
+            printf("\nO numero Decimal é: %d", dec);
             printf("\n");
             getch;
 
-            system("pause");
-            return 0;
+
+
 
 
             }
@@ -75,13 +82,11 @@
             break;
 
         default:
-
-            printf("Opcao Invalida\n"); //Se o usuário digitar um comando que não existe, irá aparecer opção inválida.
+            printf("Opção Inválida\n"); //Se o usuário digitar um comando que não existe, irá aparecer opção inválida.
 
         }
 
 
-        system("pause"); //Comando para pausar a tela e o usuário confirmar para fechar o programa.
 
         goto Menu; //Comando para voltar ao início do sistema quando apresentar o resultado.
 
