@@ -1,9 +1,9 @@
-    #include <stdio.h>
-    #include <stdlib.h>
-    #include <string.h>
-    #include <math.h>
-    #include <conio.h>
-    #include <locale.h>
+    #include <stdio.h> //Biblioteca padrão da Linguagem C.
+    #include <stdlib.h> //Biblioteca de propósito geral padrão da linguagem de programação C.
+    #include <string.h> //Biblioteca que contém uma série de funções para manipular strings.
+    #include <math.h> //Fornece um conjunto de funções para operações matemáticas.
+    #include <conio.h> //Declara várias funções úteis da biblioteca para executar "entrada e saída istream" de um programa.
+    #include <locale.h> //Adaptação deste às características de um determinado idioma ou de uma região.
 
     //Declarando variáveis:
     int numero;
@@ -12,12 +12,11 @@
 
 
     {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "Portuguese"); //Necessário para usar acentuação.
     //Menu de opções:
     Menu:
         numero=0;
         NumDec=0, binario[45]=0, aux=0, bin=0, dec=0, i=0;
-
     //Se o usuário digitar 1 irá iniciar a conversão de número decimal para binário.
     //E se o usuário digitar 2 irá iniciar a conversão de número binário para decimal.
         system("color 9");
