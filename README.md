@@ -1,3 +1,5 @@
+Link do vídeo: https://youtu.be/QT-I9K4CDAk
+
     #include <stdio.h> //Biblioteca padrão da Linguagem C.
     #include <stdlib.h> //Biblioteca de propósito geral padrão da linguagem de programação C.
     #include <string.h> //Biblioteca que contém uma série de funções para manipular strings.
